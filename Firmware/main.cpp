@@ -1,8 +1,8 @@
 
 
-void main()
+int main()
 {
     while(1);
     
-    return;
+    return -1;
 }
