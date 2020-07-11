@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+*.elf
+
+#scratchpad
+scratchpad*
+
+#folders
+Firmware/testbuild
