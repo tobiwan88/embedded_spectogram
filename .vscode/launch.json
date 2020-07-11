@@ -7,10 +7,14 @@
         {
             "name": "Cortex Debug",
             "cwd": "${workspaceRoot}",
-            "executable": "./bin/executable.elf",
             "request": "launch",
             "type": "cortex-debug",
-            "servertype": "jlink"
+            "servertype": "stutil",
+            "executable": "Firmware/testbuild/discovery.elf",
+            "device": "STM32F420",
+            "v1": false,
+            "svdFile": "Firmware/bsp/STM32F429.svd",
+            "runToMain": true,
         }
     ]
 }

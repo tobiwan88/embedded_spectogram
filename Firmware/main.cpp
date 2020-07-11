@@ -1,8 +1,12 @@
-
+#include <stdint.h>
 
 int main()
 {
-    while(1);
+    volatile auto i = 1;
+    while(1)
+    {
+        i++;
+    }
     
     return -1;
 }
