@@ -9,12 +9,12 @@
             "cwd": "${workspaceRoot}",
             "request": "launch",
             "type": "cortex-debug",
-            "servertype": "stutil",
-            "executable": "Firmware/testbuild/discovery.elf",
-            "device": "STM32F420",
-            "v1": false,
+            "servertype": "openocd",
+            "executable": "./build/discovery.elf",
+            "device": "STM32F429",
             "svdFile": "Firmware/bsp/STM32F429.svd",
             "runToMain": true,
+            "configFiles" : ["board\\stm32f429discovery.cfg"],
         }
     ]
 }
